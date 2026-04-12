@@ -2,7 +2,6 @@
 地信专业综合计算程序
 功能1：中央子午线/带号双向计算（6°带、3°带）
 功能2：GB/T 13989-2012 多比例尺地形图分幅编号计算（仅接受标准经纬度格式输入）
-作者：[地信开发]
 日期：2026-04
 """
 import math
@@ -10,7 +9,7 @@ import re
 
 
 # --------------------------
-# 原功能1：中央子午线/带号双向计算（保留不变）
+
 # --------------------------
 def main_menu():
     while True:
@@ -71,7 +70,7 @@ def sub_menu(zone_type):
 
         if choice == "1":
             try:
-                # 原功能直接输入数值经度（保留）
+               
                 longitude = float(input("请输入经度（十进制，东经为正，西经为负）："))
                 if zone_type == "6°带":
                     N = math.floor(longitude / 6) + 1 if longitude >= 0 else math.ceil(longitude / 6) + 1
@@ -83,7 +82,7 @@ def sub_menu(zone_type):
                 print("请输入有效的十进制数值！")
         elif choice == "2":
             try:
-                # 原功能直接输入数值带号（保留）
+                
                 zone_num = int(input("请输入带号："))
                 if zone_type == "6°带":
                     L = zone_num * 6 - 3
