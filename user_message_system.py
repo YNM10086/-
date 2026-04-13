@@ -8,13 +8,13 @@ DB_CONFIG = {
     'host': 'localhost',
     'port': 3306,
     'user': 'root',
-    'password': '274823137',
+    'password': 'XXXXXXXXXX', # 密码由自己设置
     'charset': 'utf8mb4'
 }
 # 数据库名
 DB_NAME = 'new_system'
 # 管理员密钥
-MANAGER_KEY = '274823137'
+MANAGER_KEY = 'XXXXXXXXX'  # 密码由自己设置
 
 
 def get_connection():
