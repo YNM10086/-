@@ -239,7 +239,7 @@ public class The_main {
         for (int i = 0; i < 3; i++) {
             System.out.print("请输入密码：");
             String pwd = in.nextLine();
-            if ("274823137".equals(pwd)) return true;
+            if ("密码".equals(pwd)) return true;
             int left = 2 - i;
             if (left > 0) System.out.println("密码错误！剩余次数：" + left);
         }
