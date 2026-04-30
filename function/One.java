@@ -9,7 +9,7 @@ public class One {
     // 全局固定数据库信息，只在这里改一次
     private static final String URL = "jdbc:mysql://localhost:3306/Cost_system?useSSL=false&serverTimezone=UTC";
     private static final String USER = "root";
-    private static final String PWD = "274823137";
+    private static final String PWD = "密码";
     // 获取数据库连接 方法
     public static Connection getConn() {
         Connection conn = null;
